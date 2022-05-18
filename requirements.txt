@@ -1,0 +1,10 @@
+fastapi
+python-multipart
+uvicorn
+pydantic
+gunicorn
+numpy==1.19.5
+opencv-python==4.5.5.62
+Pillow==8.4.0
+starlette
+requests
