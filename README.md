@@ -24,6 +24,8 @@ python app.py
 ```
 
 
+## API snippets
+
 #### 1] Sending an local Image directly as multipart-form data.
 
 
