@@ -2,7 +2,7 @@
 A Rest API Backend for Vehicle and Numberplate detection ML model
 
 <div align="center">
-  <img src="/assets/doc.png" width="93%"/>
+  <img src="/assets/doc.png" width="95%"/>
 </div>
 
 ```python
