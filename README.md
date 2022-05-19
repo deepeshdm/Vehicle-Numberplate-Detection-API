@@ -15,7 +15,7 @@ import requests
 from PIL import Image
 from io import BytesIO
 
-url = 'http://127.0.0.1:8000/numberplate'
+url = 'http://127.0.0.1:8000/detect/numberplate'
 image_path = r"C:\Desktop\images\Image1.jpg"
 
 files = {'file': ("",open(image_path, 'rb')),'Content-Type': 'image/jpeg'}
