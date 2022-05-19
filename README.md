@@ -6,6 +6,24 @@ A Rest API Backend for Vehicle and Numberplate detection ML model
 </div>
 
 
+## To Run (Locally)
+
+1. Git clone the repository on your local system.
+```
+git clone https://github.com/deepeshdm/Vehicle-Numberplate-Detection-API.git
+```
+
+2. Install the required dependencies to run the app
+```
+pip install -r requirements.txt
+```
+
+3. Execute the "app.py" with python
+```
+python app.py
+```
+
+
 #### 1] Sending an local Image directly as multipart-form data.
 
 
