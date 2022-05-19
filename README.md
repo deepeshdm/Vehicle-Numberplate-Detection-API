@@ -5,6 +5,10 @@ A Rest API Backend for Vehicle and Numberplate detection ML model
   <img src="/assets/doc.png" width="95%"/>
 </div>
 
+
+#### 1] Sending an local Image directly as multipart-form data.
+
+
 ```python
 
 import requests
@@ -27,3 +31,17 @@ else:
    output_image.show()
 
 ```
+
+#### 2] Sending Image as Base64 and receiving Base64 in return.
+
+
+
+
+
+
+
+
+
+
+
+
