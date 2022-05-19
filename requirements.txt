@@ -7,4 +7,5 @@ numpy==1.19.5
 opencv-python==4.5.5.62
 Pillow==8.4.0
 starlette
+pybase64
 requests
