@@ -1,5 +1,9 @@
 # Vehicle-Numberplate-Detection-API
-A Rest API for Vehicle and Numberplate detection ML model
+A Rest API Backend for Vehicle and Numberplate detection ML model
+
+<div align="center">
+  <img src="/assets/doc.png" width="93%"/>
+</div>
 
 ```python
 
