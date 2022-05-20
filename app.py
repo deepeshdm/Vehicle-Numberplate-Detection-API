@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import HTMLResponse
+from fastapi.responses import RedirectResponse
 import uvicorn
 from Vehicle import vehicle_router
 from Numberplate import numberplate_router
@@ -37,7 +37,8 @@ app.add_middleware(
 
 @app.get("/", include_in_schema=False)
 def root():
-    return HTMLResponse(content="<h1> Go to '/docs' for API documentation </h1>")
+    # redirect to documentation
+    return RedirectResponse("/docs")
 
 
 # -----------------------------------------------------------
