@@ -101,8 +101,35 @@ cv2.imshow("Result",img)
 cv2.waitKey(0)
 ```
 
+#### 3] Sending Image as Base64 and receiving Base64 in return (NodeJS)
+```javascript
+const fs = require("fs");
+const axios = require("axios");
 
+const ENDPOINT = 'http://localhost:8000/detect/numberplate_base64'
+const image_path = "C:/Users/Deepesh/Desktop/Vehicle Detection/images/Image88.jpg"
 
+// Encode local image to base64
+const image_base64 = fs.readFileSync(image_path,{encoding: "base64"});
+const data = JSON.stringify({image_base64:image_base64})
+console.log(data)
+
+// Set request headers
+const config = {headers: {'Content-Type': 'application/json'}};
+
+axios
+  .post(ENDPOINT, data,config)
+  .then((response) => {
+    // handle success
+    console.log("Request is Sucessful !");
+    console.log(response.data);
+  })
+  .catch((error) => {
+    // handle error
+    console.log("Request is NOT Sucessful !");
+    console.log(error);
+  });
+```
 
 
 
