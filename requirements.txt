@@ -10,9 +10,9 @@ gunicorn==20.1.0
 h11==0.13.0
 idna==3.3
 numpy==1.22.3
-opencv-python==4.5.5.64
+opencv-python
 Pillow==9.1.1
-pybase64==1.2.1
+pybase64
 pydantic==1.9.1
 python-multipart==0.0.5
 requests==2.27.1
@@ -22,5 +22,5 @@ sniffio==1.2.0
 starlette==0.19.1
 typing_extensions==4.2.0
 urllib3==1.26.9
-uvicorn==0.17.6
+uvicorn
 wincertstore==0.2
