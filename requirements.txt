@@ -9,7 +9,7 @@ fastapi
 gunicorn==20.1.0
 h11==0.13.0
 idna==3.3
-numpy==1.22.3
+numpy
 opencv-python-headless
 Pillow==9.1.1
 pybase64
