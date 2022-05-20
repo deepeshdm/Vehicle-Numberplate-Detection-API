@@ -107,16 +107,17 @@ const fs = require("fs");
 const axios = require("axios");
 
 const ENDPOINT = 'http://localhost:8000/detect/numberplate_base64'
-const image_path = "C:/Users/Deepesh/Desktop/Vehicle Detection/images/Image88.jpg"
+const image_path = "C:/Users/Deepesh/Desktop/Vehicle Detection/images/Image55.jpg"
 
 // Encode local image to base64
+console.log("Converting Image to Base64...")
 const image_base64 = fs.readFileSync(image_path,{encoding: "base64"});
 const data = JSON.stringify({image_base64:image_base64})
-console.log(data)
 
 // Set request headers
 const config = {headers: {'Content-Type': 'application/json'}};
 
+console.log("Sending Post Request...")
 axios
   .post(ENDPOINT, data,config)
   .then((response) => {
