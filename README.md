@@ -35,7 +35,7 @@ import requests
 from PIL import Image
 from io import BytesIO
 
-url = 'http://127.0.0.1:8000/detect/numberplate'
+url = 'http://ec2-3-16-25-70.us-east-2.compute.amazonaws.com:8000/detect/vehicle_base64'
 image_path = r"C:\Desktop\images\Image1.jpg"
 
 files = {'file': ("",open(image_path, 'rb')),'Content-Type': 'image/jpeg'}
@@ -62,7 +62,7 @@ import pybase64
 import base64,requests
 import io
 
-ENDPOINT = 'http://127.0.0.1:8000/detect/numberplate_base64'
+ENDPOINT = 'http://ec2-3-16-25-70.us-east-2.compute.amazonaws.com:8000/detect/vehicle_base64'
 image_path = r"C:\Users\Deepesh\Desktop\Vehicle Detection\images\Image87.jpg"
 
 # Convert Image to numpy array
@@ -106,7 +106,7 @@ cv2.waitKey(0)
 const fs = require("fs");
 const axios = require("axios");
 
-const ENDPOINT = 'http://localhost:8000/detect/numberplate_base64'
+const ENDPOINT = 'http://ec2-3-16-25-70.us-east-2.compute.amazonaws.com:8000/detect/vehicle_base64'
 const image_path = "C:/Users/Deepesh/Desktop/Vehicle Detection/images/Image55.jpg"
 
 // Encode local image to base64
